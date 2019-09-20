@@ -8,7 +8,7 @@ before_install:
   - npm install
 
 script:
-  - npm run bulid
+  - npm run build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t 1015088819/learn:latest .
-  - docker push 1015088819/learn:latest
+  - docker build -t 1015088819/react:latest .
+  - docker push 1015088819/react:latest
